@@ -1,37 +1,74 @@
+@font-face
+{
+    font-family: NewsPaperHeader;
+    src: url(font1.otf);
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: NewsPaperText;
+    src: url(font2.otf);
+}
+
+@font-face
+{
+    font-family: NewsPaperName;
+    src: url(font3.ttf);
+}
 
 h1
 {
-    font-weight: bold;
+    font-family: NewsPaperName, sans-serif;
     text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
 }
 
 h2
 {
-    font-family: Helvetica, sans-serif;
-    font-style: oblique;
+    font-style: normal;
+    text-align: center;
+    font-family: NewsPaperHeader, sans-serif;
     position: relative;
+    padding-bottom: 0px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 50px;
 }
 
-div
+div.info
 {
+    font-size: 17px;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     border: 2px solid black;
     padding: 5px 0 5px 0;
-    width: 1288px;
+    width: 1290px;
     font-family: courier, serif;
+    display: inline-block;
 }
+
+main
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section
 {
-    border: 1px solid black;
-    display: inline-block;
-    padding: 6px;
-    float: left;
+    border-left:  2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0 6px 0 6px;
+    position: absolute;
 }
 
 article
 {
-    font-family: calibri, sans-serif;
+    line-height: 25px;
 }
 
 article::first-letter
@@ -41,32 +78,36 @@ article::first-letter
 
 article.first
 {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
     column-gap: 3px;
     -webkit-column-width: 150px;
     -moz-column-width: 150px;
     column-width: 150px;
-    -webkit-column-rule: 2px solid black;
-    -moz-column-rule: 2px solid black;
-    column-rule: 2px solid black;
-    float: left;
+    -webkit-column-rule: 1px solid black;
+    -moz-column-rule: 1px solid black;
+    column-rule: 1px solid black;
 }
 
 section.first
 {
     width: 490px;
+    top: auto;
 }
 
 section.second
 {
     width: 210px;
+    left: 512px;
+    top: auto;
 }
 
 section.third
 {
     width: 550px;
+    left: 736px;
+    top: auto;
 }
 
 article.second
@@ -79,21 +120,31 @@ article.second
     column-width: 150px;
 }
 
+img
+{
+    padding-bottom: 0px;
+}
 
 img.first
 {
-    width: 440px;
+    height: 250px;
 }
 
 figure
 {
-    margin: 0 0 20px 0;
+    height: 275px;
+    margin: 25px 0px 50px 0px;
     text-align: center;
+}
+
+figcaption
+{
+    height: 25px;
 }
 
 img.third
 {
-    width: 550px;
+    height: 250px;
 }
 
 article.third
@@ -105,9 +156,36 @@ article.third
     -webkit-column-width: 160px;
     -moz-column-width: 160px;
     column-width: 160px;
-    -webkit-column-rule: 2px solid black;
-    -moz-column-rule: 2px solid black;
-    column-rule: 2px solid black;
-    font-family: calibri, sans-serif;
-    float: left;
+    -webkit-column-rule: 1px solid black;
+    -moz-column-rule: 1px solid black;
+    column-rule: 1px solid black;
+}
+
+#normal-font:checked ~ main article
+{
+    font-size: 16px;
+    font-family: NewsPaperText, sans-serif;
+}
+
+#large-font:checked ~ main article
+{
+    font-size: 20px;
+     
+}
+
+#normal-style:checked ~ main article
+{
+    font-family: NewsPaperText, sans-serif;
+}
+
+#calibri-style:checked ~ main article
+{
+    font-family: Calibri, sans-serif;
+}
+
+#bw-scheme:checked ~ main section
+{
+    background-color: black;
+    color: white;
+    border-color: white;
 }
