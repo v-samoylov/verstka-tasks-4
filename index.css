@@ -73,15 +73,14 @@ section.first
     height: 1602px;
     width: 490px;
     top: auto;
-    border-bottom: none;
 }
 
 section.second
 {
     border-right: 2px solid black;
-    height: 1325px;
+    height: 1340px;
     width: 210px;
-    left: 512px;
+    left: 514px;
     top: auto;
     border-bottom: 2px solid black;
 }
@@ -89,25 +88,26 @@ section.second
 section.third
 {
     border-bottom: 2px solid black;
+    height: 850px;
     width: 590px;
-    left: 736px;
+    left: 738px;
     top: auto;
 }
 
 section.fourth
 {
-    height: 747px;
+    height: 752px;
     width: 590px;
-    left: 736px;
+    left: 738px;
     top: 1095px;
 }
 
 section.headline
 {
-    height: 277px;
+    height: 264px;
     width: 210px;
-    top: 1569px;
-    left: 512px;
+    top: 1583px;
+    left: 514px;
     border-right: 2px solid black;
 }
 
