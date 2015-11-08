@@ -20,9 +20,11 @@
 h1
 {
     font-family: NewsPaperName, sans-serif;
-    text-align: center;
     font-size: 60px;
     font-weight: lighter;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2
@@ -46,6 +48,7 @@ main
     margin-right: auto;
     margin-bottom: 100px;
     border: 2px solid black;
+    width: 1330px;
 }
 
 div.info
@@ -70,7 +73,7 @@ section
 section.first
 {
     border-right: 2px solid black;
-    height: 1602px;
+    height: 1602px;/**/
     width: 490px;
     top: auto;
 }
@@ -104,7 +107,7 @@ section.fourth
 
 section.headline
 {
-    height: 264px;
+    height: 263px;
     width: 210px;
     top: 1583px;
     left: 514px;
@@ -216,6 +219,38 @@ figure.headline
 #large-font:checked ~ main article
 {
     font-size: 20px;
+}
+
+#large-font:checked ~ main
+{
+    height: 1950px;
+}
+
+#large-font:checked ~ main section.headline
+{
+    top: 1845px;
+    height: 315px;
+}
+
+#large-font:checked ~ main section.first
+{
+    height: 1915px;
+}
+
+#large-font:checked ~ main section.second
+{
+    height: 1600px;
+}
+
+#large-font:checked ~ main section.third
+{
+    height: 960px;
+}
+
+#large-font:checked ~ main section.fourth
+{
+    top: 1217px;
+    height: 946px;
 }
 
 #normal-style:checked ~ main article
